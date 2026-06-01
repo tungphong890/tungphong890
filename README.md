@@ -93,15 +93,15 @@ and model experimentation to deploying reliable LLM systems in production.
 <!-- Profile Summary Cards (self-hosted via GitHub Action, no rate-limit) -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/0-profile-details.svg" alt="profile details" />
+<img src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/rose_pine/0-profile-details.svg" alt="profile details" />
 
 </div>
 
 <div align="center">
 
-<img height="200" src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/3-stats.svg" alt="stats" />
-<img height="200" src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/1-repos-per-language.svg" alt="repos per language" />
-<img height="200" src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/4-productive-time.svg" alt="productive time" />
+<img height="200" src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/rose_pine/3-stats.svg" alt="stats" />
+<img height="200" src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/rose_pine/1-repos-per-language.svg" alt="repos per language" />
+<img height="200" src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/rose_pine/4-productive-time.svg" alt="productive time" />
 
 </div>
 
