@@ -2,8 +2,8 @@ name: Generate Snake
 
 on:
   schedule:
-    # Chạy lại mỗi 12 giờ để cập nhật đường đi của rắn theo contribution
-    - cron: "0 */12 * * *"
+    # Re-run every 4 hours so the snake stays fresh
+    - cron: "0 */4 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -22,8 +22,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snake.svg?palette=github-light&color_snake=FF6FA5&color_dots=FFE5EC,FFC2D1,FFB3C6,FF8FAB,FF6FA5
-            dist/snake-dark.svg?palette=github-dark&color_snake=FF8FAB&color_dots=2d1b24,FFC2D1,FFB3C6,FF8FAB,FF6FA5
+            dist/snake.svg?palette=github-light&color_snake=%23FF6FA5&color_dots=%23FFE5EC,%23FFC2D1,%23FFB3C6,%23FF8FAB,%23FF6FA5
+            dist/snake-dark.svg?palette=github-dark&color_snake=%23FF8FAB&color_dots=%232D1B24,%23FFC2D1,%23FFB3C6,%23FF8FAB,%23FF6FA5
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
