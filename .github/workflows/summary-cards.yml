@@ -19,12 +19,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate summary cards
+      - name: Generate summary cards (no internal push)
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
-          BRANCH_NAME: main
           UTC_OFFSET: 7
-          AUTO_PUSH: true
+          AUTO_PUSH: false
+
+      - name: Commit generated cards
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update profile summary cards"
+          branch: main
+          file_pattern: "profile-summary-card-output/*.svg"
+          commit_user_name: github-actions[bot]
+          commit_user_email: github-actions[bot]@users.noreply.github.com
