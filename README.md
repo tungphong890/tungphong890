@@ -105,5 +105,20 @@ and model experimentation to deploying reliable LLM systems in production.
 
 ---
 
+<!-- ========================= SNAKE GAME ========================= -->
+## Contribution Snake
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/tungphong890/tungphong890/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tungphong890/tungphong890/output/snake.svg" />
+  <img alt="snake animation" src="https://raw.githubusercontent.com/tungphong890/tungphong890/output/snake.svg" />
+</picture>
+
+</div>
+
+---
+
 <!-- =========================== FOOTER =========================== -->
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:FF8FAB,50:FFB3C6,100:FFE5EC&height=120&section=footer" alt="footer" />
