@@ -1,18 +1,23 @@
 # Hello, I am Nguyen Tung Phong
 
-### About Me
-- Focus: Data Science / AI Engineering
-- Current learning: NLP, Computer Vision
-- Expertise: Deep Learning, Chatbot
+### Core Engineering Track
+- Specialization: Data Science / Artificial Intelligence Engineering
+- Domains: Neural Networks, Recommendation Architectures, and Computer Vision
 
-### Skills and Tools
-![Python](https://shields.io)
-![Jupyter](https://shields.io)
-![Git](https://shields.io)
-![Scikit Learn](https://shields.io)
+### Technical Toolkit
+![Python](
+https://shields.io
+)
 
-### GitHub Analytics
+### Automated Code Contribution History
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://githubusercontent.com">
+  <source media="(prefers-color-scheme: light)" srcset="https://githubusercontent.com">
+  <img alt="GitHub Contribution Snake Animation" src="https://githubusercontent.com">
+</picture>
+
+### Platform Metrics
 <p align="left">
-  <img src="https://vercel.app" alt="GitHub Stats" />
-  <img src="https://vercel.app" alt="Top Languages" />
+  <img src="https://vercel.app" alt="Profile Metrics Card" />
+  <img src="https://vercel.app" alt="Top Language Usage Card" />
 </p>
