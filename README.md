@@ -11,7 +11,11 @@
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=900&color=FF6FA5&center=true&vCenter=true&width=640&height=55&lines=AI+Engineer;Building+intelligent+apps+with+LLMs+and+GenAI;Machine+Learning+and+Deep+Learning+enthusiast;Turning+data+into+intelligence)
 
-<!-- ===================== VISITOR + FOLLOWERS ===================== -->
+<!-- ===================== SOCIAL + VISITORS ===================== -->
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tung-phong-nguyen-63a7a6318/)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/tungphong)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:freeintro0404@gmail.com)
+
 <img src="https://komarev.com/ghpvc/?username=tungphong890&label=Profile%20Views&color=FF8FAB&style=flat-square" alt="profile views" />
 &nbsp;
 <img src="https://img.shields.io/github/followers/tungphong890?label=Followers&style=flat-square&color=FF8FAB&labelColor=FFE5EC&logo=github&logoColor=FF6FA5" alt="followers" />
@@ -37,33 +41,43 @@ and model experimentation to deploying reliable LLM systems in production.
 
 ---
 
+<!-- ====================== LEARNING / ASK ====================== -->
+## Currently Learning &nbsp;and&nbsp; Ask Me About
+
+- **Learning:** Advanced RAG architectures, LLM agents, model fine-tuning, MLOps
+- **Ask me about:** LLMs and GenAI, Retrieval-Augmented Generation, Computer Vision, Recommendation Systems
+
+---
+
 <!-- ========================== TECH STACK ========================== -->
 ## Tech Stack
 
-**LLM and GenAI**
+<div align="center">
 
-![Python](https://img.shields.io/badge/Python-FF8FAB?style=for-the-badge&logo=python&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-FF8FAB?style=for-the-badge&logo=langchain&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-FF8FAB?style=for-the-badge&logo=openai&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude-FF8FAB?style=for-the-badge&logo=anthropic&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/HuggingFace-FF8FAB?style=for-the-badge&logo=huggingface&logoColor=white)
+**Languages and ML / DL**
 
-**Machine Learning and Deep Learning**
+[![My Skills](https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,opencv,anaconda&theme=light)](https://skillicons.dev)
 
-![PyTorch](https://img.shields.io/badge/PyTorch-FFB3C6?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FFB3C6?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-FFB3C6?style=for-the-badge&logo=keras&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-FFB3C6?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-FFB3C6?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-FFB3C6?style=for-the-badge&logo=pandas&logoColor=white)
+**LLM / GenAI and Engineering**
 
-**Backend and Tools**
+[![My Skills](https://skillicons.dev/icons?i=fastapi,flask,docker,postgres,git,linux,vscode&theme=light)](https://skillicons.dev)
 
-![FastAPI](https://img.shields.io/badge/FastAPI-FFC2D1?style=for-the-badge&logo=fastapi&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-FFC2D1?style=for-the-badge&logo=docker&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-FFC2D1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Git](https://img.shields.io/badge/Git-FFC2D1?style=for-the-badge&logo=git&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-FFC2D1?style=for-the-badge&logo=jupyter&logoColor=white)
+</div>
+
+---
+
+<!-- ======================= FEATURED PROJECTS ======================= -->
+## Featured Projects
+
+| Project | Description | Domain |
+|---|---|---|
+| [RAG_DSAI](https://github.com/tungphong890/RAG_DSAI) | Retrieval-Augmented Generation system for grounded domain question answering | LLM / RAG |
+| [AI_Video_Pipeline](https://github.com/tungphong890/AI_Video_Pipeline) | End-to-end pipeline for AI-generated video content | Generative AI |
+| [AI-text-to-video](https://github.com/tungphong890/AI-text-to-video) | Text-to-video generation application | Generative AI |
+| [Knowledge-based-Question-Answering](https://github.com/tungphong890/Knowledge-based-Question-Answering) | Knowledge-grounded QA over a curated knowledge base | NLP |
+| [Session-based-Recommendation](https://github.com/tungphong890/Session-based-Recommendation) | Session-based recommender using sequential models | Recommender Systems |
+| [TrafficVehicleDetection](https://github.com/tungphong890/TrafficVehicleDetection) | Vehicle detection for traffic scenes | Computer Vision |
+| [Tomatoes-Disease-Detection](https://github.com/tungphong890/Tomatoes-Disease-Detection) | Tomato leaf disease classification with CNNs | Computer Vision |
 
 ---
 
@@ -76,9 +90,35 @@ and model experimentation to deploying reliable LLM systems in production.
 
 </div>
 
+<!-- Profile Summary Cards (self-hosted via GitHub Action, no rate-limit) -->
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/tungphong890/tungphong890/profile-summary-card-images/profile-summary-card-images/0-profile-details.svg" alt="profile details" />
+
+</div>
+
+<div align="center">
+
+<img height="200" src="https://raw.githubusercontent.com/tungphong890/tungphong890/profile-summary-card-images/profile-summary-card-images/3-stats.svg" alt="stats" />
+<img height="200" src="https://raw.githubusercontent.com/tungphong890/tungphong890/profile-summary-card-images/profile-summary-card-images/1-repos-per-language.svg" alt="repos per language" />
+<img height="200" src="https://raw.githubusercontent.com/tungphong890/tungphong890/profile-summary-card-images/profile-summary-card-images/4-productive-time.svg" alt="productive time" />
+
+</div>
+
 <div align="center">
 
 <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=tungphong890&bg_color=FFF0F5&color=D6336C&line=FF6FA5&point=FF8FAB&area=true&area_color=FFC2D1&hide_border=true&title_color=D6336C" alt="activity graph" />
+
+</div>
+
+---
+
+<!-- ==================== 3D CONTRIBUTION CALENDAR ==================== -->
+## 3D Contribution Calendar
+
+<div align="center">
+
+<img width="100%" src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3d contribution calendar" />
 
 </div>
 
