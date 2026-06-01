@@ -86,54 +86,20 @@ and model experimentation to deploying reliable LLM systems in production.
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=tungphong890&hide_border=true&background=FFF0F5&ring=FF6FA5&fire=FF8FAB&currStreakLabel=D6336C&sideLabels=8A5A78&dates=B98AA3&currStreakNum=D6336C&sideNums=D6336C" alt="streak" />
-
-</div>
-
-<!-- Profile Summary Cards (self-hosted via GitHub Action, no rate-limit) -->
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/rose_pine/0-profile-details.svg" alt="profile details" />
+<img src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/pink/0-profile-details.svg" alt="profile details" />
 
 </div>
 
 <div align="center">
 
-<img height="200" src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/rose_pine/3-stats.svg" alt="stats" />
-<img height="200" src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/rose_pine/1-repos-per-language.svg" alt="repos per language" />
-<img height="200" src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/rose_pine/4-productive-time.svg" alt="productive time" />
+<img height="195" src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/pink/3-stats.svg" alt="stats" />
+<img height="195" src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-summary-card-output/pink/1-repos-per-language.svg" alt="repos per language" />
 
 </div>
 
 <div align="center">
 
 <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=tungphong890&bg_color=FFF0F5&color=D6336C&line=FF6FA5&point=FF8FAB&area=true&area_color=FFC2D1&hide_border=true&title_color=D6336C" alt="activity graph" />
-
-</div>
-
----
-
-<!-- ==================== 3D CONTRIBUTION CALENDAR ==================== -->
-## 3D Contribution Calendar
-
-<div align="center">
-
-<img width="100%" src="https://raw.githubusercontent.com/tungphong890/tungphong890/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3d contribution calendar" />
-
-</div>
-
----
-
-<!-- ========================= SNAKE GAME ========================= -->
-## Contribution Snake
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/tungphong890/tungphong890/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tungphong890/tungphong890/output/snake.svg" />
-  <img alt="snake animation" src="https://raw.githubusercontent.com/tungphong890/tungphong890/output/snake.svg" />
-</picture>
 
 </div>
 

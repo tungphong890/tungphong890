@@ -2,7 +2,6 @@ name: Generate Profile Summary Cards
 
 on:
   schedule:
-    # Refresh twice a day
     - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
@@ -12,7 +11,6 @@ on:
 permissions:
   contents: write
 
-# Serialize with other workflows that push to main (prevents push races)
 concurrency:
   group: profile-main-assets
   cancel-in-progress: false
@@ -33,15 +31,113 @@ jobs:
           UTC_OFFSET: 7
           AUTO_PUSH: false
 
-      - name: Keep only the rose_pine theme
+      # Re-color all SVGs to cherry-blossom pink palette:
+      #   background  : #FFF0F5  (very light pink)
+      #   text/border : #D6336C  (deep rose)
+      #   accent 1    : #FF6FA5  (hot pink)
+      #   accent 2    : #FF8FAB  (medium pink)
+      #   pie slice 1 : #FFB3C6
+      #   pie slice 2 : #FFC2D1
+      #   pie slice 3 : #FFD6E0
+      #   pie slice 4 : #FF8FAB
+      #   pie slice 5 : #FF6FA5
+      #   pie slice 6 : #F06292
+      #   bar/fill    : #FFB3C6
+      - name: Re-color SVGs to pink palette
         run: |
-          cd profile-summary-card-output
-          find . -mindepth 1 -maxdepth 1 -type d ! -name 'rose_pine' -exec rm -rf {} +
+          pip install -q lxml 2>/dev/null || true
+
+          python3 << 'PYEOF'
+          import os, re, shutil
+
+          SRC  = "profile-summary-card-output/rose_pine"
+          DEST = "profile-summary-card-output/pink"
+          os.makedirs(DEST, exist_ok=True)
+
+          # --- palette: map SOURCE color -> PINK replacement ---
+          # rose_pine background
+          BG_DARK   = "#191724"   # rose_pine dark bg   -> light pink bg
+          BG_DARK2  = "#1f1d2e"
+          BG_MID    = "#26233a"   # rose_pine overlay   -> slightly darker pink
+          TEXT_MAIN = "#e0def4"   # rose_pine text      -> deep rose
+          TEXT_SUB  = "#908caa"   # rose_pine muted     -> medium rose
+          TEXT_GOLD = "#f6c177"   # rose_pine gold      -> accent pink
+          ACC_ROSE  = "#ebbcba"   # rose_pine rose      -> hot pink
+          ACC_FOAM  = "#9ccfd8"   # rose_pine foam      -> pink
+          ACC_IRIS  = "#c4a7e7"   # rose_pine iris      -> pink
+          ACC_PINE  = "#31748f"   # rose_pine pine      -> pink
+          ACC_LOVE  = "#eb6f92"   # rose_pine love      -> deep pink
+
+          PALETTE = {
+              BG_DARK:   "#FFF0F5",
+              BG_DARK2:  "#FFF0F5",
+              BG_MID:    "#FFE5EC",
+              TEXT_MAIN: "#D6336C",
+              TEXT_SUB:  "#B05070",
+              TEXT_GOLD: "#FF6FA5",
+              ACC_ROSE:  "#FF8FAB",
+              ACC_FOAM:  "#FFC2D1",
+              ACC_IRIS:  "#FFB3C6",
+              ACC_PINE:  "#FF6FA5",
+              ACC_LOVE:  "#E91E8C",
+          }
+
+          # Additional: language-coloring in pie charts uses arbitrary colors.
+          # We detect all hex colors in the file and remap non-pink ones to
+          # a rotating pink palette so every legend entry is a distinct pink shade.
+          PIE_PINKS = [
+              "#FF6FA5", "#FF8FAB", "#FFB3C6", "#FFC2D1",
+              "#FFD6E0", "#F06292", "#EC407A", "#FF4081",
+          ]
+
+          def nearest_pink(idx):
+              return PIE_PINKS[idx % len(PIE_PINKS)]
+
+          def is_pink(h):
+              """Return True if color is already a pink/rose shade."""
+              h = h.lstrip("#")
+              if len(h) == 3:
+                  h = h[0]*2 + h[1]*2 + h[2]*2
+              try:
+                  r, g, b = int(h[0:2],16), int(h[2:4],16), int(h[4:6],16)
+              except:
+                  return False
+              return r > 200 and g < r - 20
+
+          for fname in os.listdir(SRC):
+              if not fname.endswith(".svg"):
+                  continue
+              with open(os.path.join(SRC, fname), "r", encoding="utf-8") as f:
+                  svg = f.read()
+
+              # Step 1: apply known palette substitutions (case-insensitive)
+              for src_c, dst_c in PALETTE.items():
+                  svg = re.sub(re.escape(src_c), dst_c, svg, flags=re.IGNORECASE)
+
+              # Step 2: find remaining non-pink hex colors and rotate through PIE_PINKS
+              counter = [0]
+              def replace_color(m):
+                  h = m.group(0)
+                  if is_pink(h):
+                      return h
+                  replacement = nearest_pink(counter[0])
+                  counter[0] += 1
+                  return replacement
+
+              svg = re.sub(r'#[0-9A-Fa-f]{6}\b', replace_color, svg)
+
+              with open(os.path.join(DEST, fname), "w", encoding="utf-8") as f:
+                  f.write(svg)
+              print(f"processed {fname}")
+
+          # Clean up rose_pine folder
+          shutil.rmtree(SRC, ignore_errors=True)
+          PYEOF
 
       - name: Commit generated cards
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update profile summary cards"
+          commit_message: "chore: update profile summary cards (pink palette)"
           branch: main
           file_pattern: "profile-summary-card-output/"
           commit_user_name: github-actions[bot]
