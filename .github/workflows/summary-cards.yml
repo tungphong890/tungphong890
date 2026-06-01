@@ -126,6 +126,10 @@ jobs:
 
               # Step 1b: force card background rects to very light pink
               svg = recolor_card_bg(svg)
+              # debug: print rect fills after recolor
+              import re as _re
+              _rect_fills = _re.findall(r'<rect[^>]*rx="[^>]*/?>', svg)
+              print(f"  {fname} rect bg fills:", [_re.findall(r'fill="#[^"]+"', r) for r in _rect_fills])
 
               # Step 2: find remaining non-pink hex colors and rotate through PIE_PINKS
               counter = [0]
