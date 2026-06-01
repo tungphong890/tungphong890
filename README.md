@@ -23,23 +23,17 @@
 <!-- ============================ ABOUT ============================ -->
 ## About Me
 
-```python
-class AIEngineer:
-    def __init__(self):
-        self.name    = "Nguyen Tung Phong"
-        self.role    = "AI Engineer"
-        self.focus   = ["LLMs", "GenAI", "RAG", "Deep Learning"]
-        self.stack   = ["Python", "PyTorch", "TensorFlow", "Hugging Face"]
-        self.mindset = "Turn raw data into intelligent products"
+I am an **AI Engineer** focused on building production-grade applications powered by
+Large Language Models and Generative AI. My work covers the full lifecycle, from data
+and model experimentation to deploying reliable LLM systems in production.
 
-    def current_work(self):
-        return "Building LLM-powered chatbots and RAG pipelines"
-```
-
-- I build real-world **LLM / GenAI** applications: chatbots, RAG systems, and agents.
-- Deeply interested in **Machine Learning and Deep Learning** fundamentals.
-- Always learning and experimenting with the latest models.
-- Reach me at **freeintro0404@gmail.com**
+|  |  |
+|---|---|
+| **Role** | AI Engineer |
+| **Focus** | LLMs, Generative AI, Retrieval-Augmented Generation, Deep Learning |
+| **Core Stack** | Python, PyTorch, TensorFlow, Hugging Face |
+| **Currently Building** | LLM-powered chatbots and RAG pipelines |
+| **Contact** | freeintro0404@gmail.com |
 
 ---
 
