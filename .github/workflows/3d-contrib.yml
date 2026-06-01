@@ -12,6 +12,11 @@ on:
 permissions:
   contents: write
 
+# Serialize with other workflows that push to main (prevents push races)
+concurrency:
+  group: profile-main-assets
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
