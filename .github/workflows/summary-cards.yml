@@ -43,6 +43,6 @@ jobs:
         with:
           commit_message: "chore: update profile summary cards"
           branch: main
-          file_pattern: "profile-summary-card-output/**"
+          file_pattern: "profile-summary-card-output/"
           commit_user_name: github-actions[bot]
           commit_user_email: github-actions[bot]@users.noreply.github.com
