@@ -105,6 +105,16 @@ jobs:
               # must be high red, blue must be reasonably high (rules out orange/red/brown)
               return r > 190 and b > 100 and g < r - 30
 
+          def recolor_card_bg(svg):
+              """Set card background rect fill to very light pink, keep border stroke."""
+              # The outer rect of each card has fill= that becomes #FF8FAB after palette mapping.
+              # Replace only the fill on <rect> tags with rx/ry (rounded card backgrounds).
+              def fix_rect(m):
+                  tag = m.group(0)
+                  tag = re.sub(r'fill="#[0-9A-Fa-f]{6}"', 'fill="#FFF0F5"', tag)
+                  return tag
+              return re.sub(r'<rect\b[^>]*\brx=\b[^>]*/?>',  fix_rect, svg)
+
           for fname in os.listdir(SRC):
               if not fname.endswith(".svg"):
                   continue
@@ -114,6 +124,9 @@ jobs:
               # Step 1: apply known palette substitutions (case-insensitive)
               for src_c, dst_c in PALETTE.items():
                   svg = re.sub(re.escape(src_c), dst_c, svg, flags=re.IGNORECASE)
+
+              # Step 1b: force card background rects to very light pink
+              svg = recolor_card_bg(svg)
 
               # Step 2: find remaining non-pink hex colors and rotate through PIE_PINKS
               counter = [0]
