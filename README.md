@@ -1,16 +1,18 @@
-## Hi there 👋
+# Hello, I am Nguyen Tung Phong
 
-<!--
-**tungphong890/tungphong890** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### About Me
+- Focus: Data Science / AI Engineering
+- Current learning: NLP, Computer Vision
+- Expertise: Deep Learning, Chatbot
 
-Here are some ideas to get you started:
+### Skills and Tools
+![Python](https://shields.io)
+![Jupyter](https://shields.io)
+![Git](https://shields.io)
+![Scikit Learn](https://shields.io)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### GitHub Analytics
+<p align="left">
+  <img src="https://vercel.app" alt="GitHub Stats" />
+  <img src="https://vercel.app" alt="Top Languages" />
+</p>
