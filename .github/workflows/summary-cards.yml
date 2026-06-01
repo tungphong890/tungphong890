@@ -94,7 +94,7 @@ jobs:
               return PIE_PINKS[idx % len(PIE_PINKS)]
 
           def is_pink(h):
-              """Return True if color is already a pink/rose shade."""
+              """Return True if color is already a pink/rose shade (high R, low-mid G, mid-high B)."""
               h = h.lstrip("#")
               if len(h) == 3:
                   h = h[0]*2 + h[1]*2 + h[2]*2
@@ -102,7 +102,8 @@ jobs:
                   r, g, b = int(h[0:2],16), int(h[2:4],16), int(h[4:6],16)
               except:
                   return False
-              return r > 200 and g < r - 20
+              # must be high red, blue must be reasonably high (rules out orange/red/brown)
+              return r > 190 and b > 100 and g < r - 30
 
           for fname in os.listdir(SRC):
               if not fname.endswith(".svg"):
