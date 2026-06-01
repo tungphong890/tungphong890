@@ -107,13 +107,12 @@ jobs:
 
           def recolor_card_bg(svg):
               """Set card background rect fill to very light pink, keep border stroke."""
-              # The outer rect of each card has fill= that becomes #FF8FAB after palette mapping.
-              # Replace only the fill on <rect> tags with rx/ry (rounded card backgrounds).
+              # Card outer rect pattern: <rect x="1" y="1" rx="5" ry="5" ...fill="...">
               def fix_rect(m):
                   tag = m.group(0)
                   tag = re.sub(r'fill="#[0-9A-Fa-f]{6}"', 'fill="#FFF0F5"', tag)
                   return tag
-              return re.sub(r'<rect\b[^>]*\brx=\b[^>]*/?>',  fix_rect, svg)
+              return re.sub(r'<rect[^>]*rx="[^>]*/?>',  fix_rect, svg)
 
           for fname in os.listdir(SRC):
               if not fname.endswith(".svg"):
