@@ -33,11 +33,17 @@ jobs:
           UTC_OFFSET: 7
           AUTO_PUSH: false
 
+      - name: List generated files (debug)
+        run: |
+          echo "=== git status ==="
+          git status --porcelain
+          echo "=== find svg ==="
+          find . -name "*.svg" -newermt "-10 minutes" -not -path "./.git/*" | head -50
+
       - name: Commit generated cards
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update profile summary cards"
           branch: main
-          file_pattern: "profile-summary-card-output/*.svg"
           commit_user_name: github-actions[bot]
           commit_user_email: github-actions[bot]@users.noreply.github.com
